@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Categories=System
+Exec=kdesu /usr/sbin/instonusb
+Icon=instonusb
+OnlyShowIn=KDE
+StartupNotify=true
+Terminal=false
+NoDisplay=false
+_Name=iso Live usb installer
+_GenericName=iso Live usb installer
+_Comment=iso Live usb installer

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+
+Name=iso Live usb installer
+Name[el]=Εγκατάσταση του iso Live σε USB
+
+Categories=System
+Exec=gksu /usr/sbin/instonusb
+Icon=instonusb
+NotShowIn=KDE

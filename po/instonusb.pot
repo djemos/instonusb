@@ -1,0 +1,127 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-12 18:47+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/instonusb.ui:104
+msgid "vfat"
+msgstr ""
+
+#: src/instonusb.ui:107
+msgid "ext3"
+msgstr ""
+
+#: src/instonusb.ui:115 src/instonusb.ui:1407 src/instonusb.ui:1454
+#: src/instonusb.ui:1500 src/instonusb.ui:1546 src/instonusb.ui:1615
+msgid "Live USB Installer"
+msgstr ""
+
+#: src/instonusb.ui:132
+msgid "_File"
+msgstr ""
+
+#: src/instonusb.ui:162
+msgid "_Help"
+msgstr ""
+
+#: src/instonusb.ui:205
+msgid "Select iso file:"
+msgstr ""
+
+#: src/instonusb.ui:259
+msgid "Find usb"
+msgstr ""
+
+#: src/instonusb.ui:330 src/instonusb.ui:344
+msgid "Choose the filesystem type to format usb."
+msgstr ""
+
+#: src/instonusb.ui:331
+msgid "Filesystem Type:"
+msgstr ""
+
+#: src/instonusb.ui:399
+msgid "USB Label name:"
+msgstr ""
+
+#: src/instonusb.ui:450
+msgid "Persistent file (MB):"
+msgstr ""
+
+#: src/instonusb.ui:454
+msgid "click here if you want to create a persistent file."
+msgstr ""
+
+#: src/instonusb.ui:469
+msgid ""
+"Please select persistent file size\n"
+"for vfat filesystem, persistent size is up to 3998 MB"
+msgstr ""
+
+#: src/instonusb.ui:490
+msgid "Passphrase:"
+msgstr ""
+
+#: src/instonusb.ui:503
+msgid "Type the passphrase for encrypting the persistent file."
+msgstr ""
+
+#: src/instonusb.ui:520
+msgid "visible"
+msgstr ""
+
+#: src/instonusb.ui:524
+msgid ""
+"Check this box if you want to be able to see the passphrase\n"
+"you are typing."
+msgstr ""
+
+#: src/instonusb.ui:588 src/instonusb.ui:609
+msgid "Copy iso file to usb"
+msgstr ""
+
+#: src/instonusb.ui:638
+msgid "Create persistent file"
+msgstr ""
+
+#: src/instonusb.ui:696
+msgid "About"
+msgstr ""
+
+#: src/instonusb.ui:1383
+msgid "translator-credits"
+msgstr ""
+
+#: src/instonusb.ui:1417
+msgid "Error encountered."
+msgstr ""
+
+#: src/instonusb.ui:1463
+msgid "Installation completed."
+msgstr ""
+
+#: src/instonusb.ui:1509
+msgid "The persistent file persistent is ready."
+msgstr ""
+
+#: src/instonusb.ui:1622
+msgid "Please choose an iso file."
+msgstr ""
+
+#: src/instonusb.desktop.in.h:1 src/instonusb-kde.desktop.in.h:1
+msgid "iso Live usb installer"
+msgstr ""
