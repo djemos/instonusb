@@ -1,0 +1,17 @@
+/usr/doc/instonusb-1.0/COPYING
+/usr/doc/instonusb-1.0/AUTHORS
+/usr/share/locale/de/LC_MESSAGES/instonusb.mo
+/usr/share/locale/el/LC_MESSAGES/instonusb.mo
+/usr/share/locale/es/LC_MESSAGES/instonusb.mo
+/usr/share/locale/fr/LC_MESSAGES/instonusb.mo
+/usr/share/locale/pt/LC_MESSAGES/instonusb.mo
+/usr/share/locale/ro/LC_MESSAGES/instonusb.mo
+/usr/share/locale/ru/LC_MESSAGES/instonusb.mo
+/usr/share/locale/sv/LC_MESSAGES/instonusb.mo
+/usr/sbin/instonusb
+/usr/share/instonusb/instonusb.ui
+/usr/share/applications/instonusb.desktop
+/usr/share/applications/instonusb-kde.desktop
+/usr/share/pixmaps/instonusb.png
+/usr/sbin/instonusb-location-detection.sh
+/usr/sbin/install_iso_on_usb.sh
