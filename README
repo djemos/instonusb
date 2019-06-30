@@ -1,5 +1,5 @@
 # instonusb
 Slackel Live USB Installer (Tool to install Slackel Live on USB stick).
-It is  written for Slackel / Slackel64 Linux.
+It is  written in c and glage for Slackel / Slackel64 Linux.
 
 The SLKBUILD source package can be found on http://www.slackel.gr/repo/source/slackel-source/slackel-live-usb-installer-1.0/
