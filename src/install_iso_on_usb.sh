@@ -680,9 +680,15 @@ if [ "$SIZE" != "" ]; then
 		sectorsize=`cat /sys/block/$device/queue/hw_sector_size`
 		let mediasize=$sectorscount*$sectorsize/1048576 #in MB
 		installdevice="/dev/$device"
+		echo installdevice=$installdevice
 		#if [ `uname -m` == "x86_64" ] && [ "$iso_arch" == "64" ]; then #EFI/GPT
 		if [ "$iso_arch" == "64" ]; then #EFI/GPT
 			if mount $installdevice"2" /mnt/tmp >/dev/null 2>&1; then
+				if mount | grep -q "^$installmedia .* vfat "; then
+					if [ "$SIZE" -gt "3998" ]; then
+						SIZE="3998"
+					fi
+				fi
 				sleep 1
 				umount /mnt/tmp
 				partitionnumber=2
@@ -691,7 +697,16 @@ if [ "$SIZE" != "" ]; then
 			else	
 				partitionnumber=1
 				installmedia="$installdevice$partitionnumber"
-				echo $installmedia			
+				if mount $installmedia /mnt/tmp >/dev/null 2>&1; then
+					echo $installmedia
+					if mount | grep -q "^$installmedia .* vfat "; then
+						if [ "$SIZE" -gt "3998" ]; then
+							SIZE="3998"
+						fi
+					fi
+					sleep 1
+					umount /mnt/tmp	
+				fi				
 			fi
 		else #BIOS/MBR
 			partitionnumber=1
@@ -706,7 +721,7 @@ if [ "$SIZE" != "" ]; then
 				sleep 1
 				umount /mnt/tmp	
 			fi	
-		fi			
+		fi
 			create_persistent
 			exit $!
 	else
