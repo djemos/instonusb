@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: slackel-live-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-12 18:41+0200\n"
+"POT-Creation-Date: 2022-04-27 21:48+0300\n"
 "PO-Revision-Date: 2019-03-07 02:31+0200\n"
 "Last-Translator: Dimitris Tzemos <dijemos@gmail.com>\n"
 "Language-Team: French (http://www.transifex.com/djemos/slackel-live-"
@@ -20,75 +20,87 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Poedit 2.0.4\n"
 
-#: src/instonusb.ui:104
+#: src/instonusb.ui:139
 msgid "vfat"
 msgstr "vfat"
 
-#: src/instonusb.ui:107
+#: src/instonusb.ui:142
 msgid "ext3"
 msgstr "ext3"
 
-#: src/instonusb.ui:115 src/instonusb.ui:1407 src/instonusb.ui:1454
-#: src/instonusb.ui:1500 src/instonusb.ui:1546 src/instonusb.ui:1615
+#: src/instonusb.ui:150 src/instonusb.ui:1561 src/instonusb.ui:1603
+#: src/instonusb.ui:1644 src/instonusb.ui:1685 src/instonusb.ui:1755
 msgid "Live USB Installer"
 msgstr ""
 
-#: src/instonusb.ui:132
+#: src/instonusb.ui:169
 msgid "_File"
 msgstr "_Fichier"
 
-#: src/instonusb.ui:162
+#: src/instonusb.ui:183
+msgid "Quit"
+msgstr ""
+
+#: src/instonusb.ui:199
 msgid "_Help"
 msgstr "_Aide"
 
-#: src/instonusb.ui:205
+#: src/instonusb.ui:207 src/instonusb.ui:847
+msgid "About"
+msgstr "À propos"
+
+#: src/instonusb.ui:244
 msgid "Select iso file:"
 msgstr ""
 
-#: src/instonusb.ui:259
+#: src/instonusb.ui:269
+msgid "Find"
+msgstr ""
+
+#: src/instonusb.ui:320
 msgid "Find usb"
 msgstr ""
 
-#: src/instonusb.ui:330 src/instonusb.ui:344
+#: src/instonusb.ui:394 src/instonusb.ui:407
 msgid "Choose the filesystem type to format usb."
 msgstr "Choisir le type de système de fichier pour formater le support USB"
 
-#: src/instonusb.ui:331
+#: src/instonusb.ui:395
 msgid "Filesystem Type:"
 msgstr "Type de système de fichier :"
 
-#: src/instonusb.ui:399
+#: src/instonusb.ui:462
 msgid "USB Label name:"
 msgstr ""
 
-#: src/instonusb.ui:450
+#: src/instonusb.ui:524
 msgid "Persistent file (MB):"
 msgstr ""
 
-#: src/instonusb.ui:454
+#: src/instonusb.ui:528
 #, fuzzy
 msgid "click here if you want to create a persistent file."
 msgstr "cliquer ici si vous voulez copier le système sur clef USB"
 
-#: src/instonusb.ui:469
+#: src/instonusb.ui:543
 msgid ""
 "Please select persistent file size\n"
 "for vfat filesystem, persistent size is up to 3998 MB"
 msgstr ""
 
-#: src/instonusb.ui:490
+#: src/instonusb.ui:564
 msgid "Passphrase:"
 msgstr ""
 
-#: src/instonusb.ui:503
+#: src/instonusb.ui:577
 msgid "Type the passphrase for encrypting the persistent file."
 msgstr ""
 
-#: src/instonusb.ui:520
+#: src/instonusb.ui:591
 msgid "visible"
 msgstr "visible"
 
-#: src/instonusb.ui:524
+#: src/instonusb.ui:595
 #, fuzzy
 msgid ""
 "Check this box if you want to be able to see the passphrase\n"
@@ -97,35 +109,43 @@ msgstr ""
 "Cochez cette boite si vous voulez voir le mot de passe\n"
 "que vous tapez."
 
-#: src/instonusb.ui:588 src/instonusb.ui:609
+#: src/instonusb.ui:682 src/instonusb.ui:703
 msgid "Copy iso file to usb"
 msgstr ""
 
-#: src/instonusb.ui:638
+#: src/instonusb.ui:714
 msgid "Create persistent file"
 msgstr ""
 
-#: src/instonusb.ui:696
-msgid "About"
-msgstr "À propos"
+#: src/instonusb.ui:724
+msgid "Stop"
+msgstr ""
 
-#: src/instonusb.ui:1383
+#: src/instonusb.ui:1535
 msgid "translator-credits"
 msgstr ""
 
-#: src/instonusb.ui:1417
+#: src/instonusb.ui:1571
 msgid "Error encountered."
 msgstr "Une erreur s'est produite."
 
-#: src/instonusb.ui:1463
+#: src/instonusb.ui:1612
 msgid "Installation completed."
 msgstr "Installation terminée."
 
-#: src/instonusb.ui:1509
+#: src/instonusb.ui:1653
 msgid "The persistent file persistent is ready."
 msgstr ""
 
-#: src/instonusb.ui:1622
+#: src/instonusb.ui:1708
+msgid "Cancel"
+msgstr ""
+
+#: src/instonusb.ui:1722
+msgid "OK"
+msgstr ""
+
+#: src/instonusb.ui:1762
 msgid "Please choose an iso file."
 msgstr ""
 

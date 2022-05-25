@@ -1,6 +1,6 @@
 /*
 instonusb.c from Slackel <http://www.slackel.gr>
-Copyright (C) 2020 Dimitris Tzemos <dijemos@gmail.com>
+Copyright (C) 2022 Dimitris Tzemos <dijemos@gmail.com>
 
 This program is free software: you can redistribute it and/or modify it under the terms of 
 the GNU General Public License as published by the Free Software Foundation,
@@ -317,7 +317,7 @@ void initpersistent() {
 void on_process_end (GPid thepid, gint status, gpointer data) {
 	GtkWidget *dialog;
 	GtkProgressBar *progressbar;
-
+	
 	pid = 0;
 	g_free(location);
 	location = NULL;
@@ -373,7 +373,9 @@ void on_isofile_ok_button_clicked(GtkWidget *widget, gpointer user_data){
     //     open_file (filename);
      //    g_free (filename);
 	isoname = (GtkWidget *) gtk_builder_get_object(widgetstree, "isoname");
-	gtk_entry_set_text (GTK_ENTRY(isoname),filename);
+	if (filename != NULL) {
+		gtk_entry_set_text (GTK_ENTRY(isoname),filename);
+	}
 }
 
 void on_usbbutton_clicked (GtkWidget *widget, gpointer user_data) {

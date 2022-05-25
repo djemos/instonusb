@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: slackel-live-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-12 18:41+0200\n"
-"PO-Revision-Date: 2019-03-07 02:31+0200\n"
+"POT-Creation-Date: 2022-04-27 21:48+0300\n"
+"PO-Revision-Date: 2022-04-27 21:38+0300\n"
 "Last-Translator: Dimitris Tzemos <dijemos@gmail.com>\n"
 "Language-Team: Romanian (http://www.transifex.com/djemos/slackel-live-"
 "installer/language/ro/)\n"
@@ -20,77 +20,89 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
 "2:1));\n"
-"X-Generator: Poedit 2.0.4\n"
+"X-Generator: Poedit 3.0.1\n"
 
-#: src/instonusb.ui:104
+#: src/instonusb.ui:139
 msgid "vfat"
 msgstr "vfat"
 
-#: src/instonusb.ui:107
+#: src/instonusb.ui:142
 msgid "ext3"
 msgstr "ext3"
 
-#: src/instonusb.ui:115 src/instonusb.ui:1407 src/instonusb.ui:1454
-#: src/instonusb.ui:1500 src/instonusb.ui:1546 src/instonusb.ui:1615
+#: src/instonusb.ui:150 src/instonusb.ui:1561 src/instonusb.ui:1603
+#: src/instonusb.ui:1644 src/instonusb.ui:1685 src/instonusb.ui:1755
 msgid "Live USB Installer"
 msgstr ""
 
-#: src/instonusb.ui:132
+#: src/instonusb.ui:169
 msgid "_File"
 msgstr "_Fișier"
 
-#: src/instonusb.ui:162
+#: src/instonusb.ui:183
+msgid "Quit"
+msgstr ""
+
+#: src/instonusb.ui:199
 msgid "_Help"
 msgstr "_Ajutor"
 
-#: src/instonusb.ui:205
+#: src/instonusb.ui:207 src/instonusb.ui:847
+msgid "About"
+msgstr "Despre"
+
+#: src/instonusb.ui:244
 msgid "Select iso file:"
 msgstr ""
 
-#: src/instonusb.ui:259
+#: src/instonusb.ui:269
+msgid "Find"
+msgstr ""
+
+#: src/instonusb.ui:320
 msgid "Find usb"
 msgstr ""
 
-#: src/instonusb.ui:330 src/instonusb.ui:344
+#: src/instonusb.ui:394 src/instonusb.ui:407
 msgid "Choose the filesystem type to format usb."
 msgstr "Alegeți tipul de sistem de fișiere pentru a formata usb."
 
-#: src/instonusb.ui:331
+#: src/instonusb.ui:395
 msgid "Filesystem Type:"
 msgstr "Tipul sistemului de fișiere:"
 
-#: src/instonusb.ui:399
+#: src/instonusb.ui:462
 msgid "USB Label name:"
 msgstr ""
 
-#: src/instonusb.ui:450
+#: src/instonusb.ui:524
 msgid "Persistent file (MB):"
 msgstr ""
 
-#: src/instonusb.ui:454
+#: src/instonusb.ui:528
 #, fuzzy
 msgid "click here if you want to create a persistent file."
 msgstr "apăsați aici dacă doriți să copiați sistemul pe dispozitiv usb"
 
-#: src/instonusb.ui:469
+#: src/instonusb.ui:543
 msgid ""
 "Please select persistent file size\n"
 "for vfat filesystem, persistent size is up to 3998 MB"
 msgstr ""
 
-#: src/instonusb.ui:490
+#: src/instonusb.ui:564
 msgid "Passphrase:"
 msgstr ""
 
-#: src/instonusb.ui:503
+#: src/instonusb.ui:577
 msgid "Type the passphrase for encrypting the persistent file."
 msgstr ""
 
-#: src/instonusb.ui:520
+#: src/instonusb.ui:591
 msgid "visible"
 msgstr "vizibil"
 
-#: src/instonusb.ui:524
+#: src/instonusb.ui:595
 #, fuzzy
 msgid ""
 "Check this box if you want to be able to see the passphrase\n"
@@ -99,35 +111,43 @@ msgstr ""
 "Apăsați acest buton dacă doriți să vedeți parola\n"
 "introdusă."
 
-#: src/instonusb.ui:588 src/instonusb.ui:609
+#: src/instonusb.ui:682 src/instonusb.ui:703
 msgid "Copy iso file to usb"
 msgstr ""
 
-#: src/instonusb.ui:638
+#: src/instonusb.ui:714
 msgid "Create persistent file"
 msgstr ""
 
-#: src/instonusb.ui:696
-msgid "About"
-msgstr "Despre"
+#: src/instonusb.ui:724
+msgid "Stop"
+msgstr ""
 
-#: src/instonusb.ui:1383
+#: src/instonusb.ui:1535
 msgid "translator-credits"
 msgstr ""
 
-#: src/instonusb.ui:1417
+#: src/instonusb.ui:1571
 msgid "Error encountered."
 msgstr "Eroare întâmpinată."
 
-#: src/instonusb.ui:1463
+#: src/instonusb.ui:1612
 msgid "Installation completed."
 msgstr "Instalare terminată."
 
-#: src/instonusb.ui:1509
+#: src/instonusb.ui:1653
 msgid "The persistent file persistent is ready."
 msgstr ""
 
-#: src/instonusb.ui:1622
+#: src/instonusb.ui:1708
+msgid "Cancel"
+msgstr ""
+
+#: src/instonusb.ui:1722
+msgid "OK"
+msgstr ""
+
+#: src/instonusb.ui:1762
 msgid "Please choose an iso file."
 msgstr ""
 
