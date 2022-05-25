@@ -1,10 +1,12 @@
 #Packager: Dimitris Tzemos <dijemos@gmail.com>
 
 pkgname=instonusb
-pkgver=1.0
-pkgrel=4dj
-source=("http://www.slackel.gr/repo/source/slackel-source/slackel-live-usb-installer-1.0/$pkgname-$pkgver.tar.bz2")
+pkgver=2.0
+pkgrel=2dj
+source=("http://www.slackel.gr/repo/source/slackel-source/instonusb/2.0/$pkgname-$pkgver.tar.bz2")
+#source=("$pkgname-$pkgver.tar.bz2")
 url="http://slackel.gr"
+#options=('nosrcpack')
 
 slackdesc=\
 (
