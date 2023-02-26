@@ -128,9 +128,9 @@ if [ -f "$isoname" ]; then
 	isonamef="${isoname##*/}"
 	isonamef="${isonamef%%-*}"
 
-	if [ "$isonamef" == "slackellive64" ]; then
+	if [ "$isonamef" == "slackellive64" ] || [ "$isonamef" == "salixlive64" ]; then
 		iso_arch=64
-	elif [ "$isonamef" == "slackellive" ]; then
+	elif [ "$isonamef" == "slackellive" ] || [ "$isonamef" == "salixlive" ]; then
 		iso_arch=32
 	else
 		echo "You provide the wrong iso image"
@@ -372,6 +372,7 @@ if [ $AFTER -gt 0 ]; then
 		tune2fs -m 0 -c 0 -i 0 ${CNTDEV}
 		# Don't forget to clean up after ourselves:
 		if [ "${ENCRYPT}" = "yes" ]; then
+			echo "Encrypting persistent file $NAME"
 			cryptsetup luksClose $(basename ${NAME})
 		fi
 		losetup -d ${LODEV} || true
@@ -668,7 +669,7 @@ case $action in
 	installmedia=$3
 	SIZE=$4
 	PASS=$5
-    if [ "PASS" != "" ]; then
+    if [ "$PASS" != "" ]; then
 		ENCRYPT="yes"
 	fi	
 	check_device $installmedia
