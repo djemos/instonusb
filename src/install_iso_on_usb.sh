@@ -36,16 +36,14 @@ version() {
   echo "Licence: $LICENCE"
 }
 usage() {
-  echo 'install_on_usb.sh [-h/--help] [-v/--version]'
+  echo 'install_iso_on_usb.sh [-h/--help] [-v/--version]'
   echo ' -h, --help: this usage message'
   echo ' -v, --version: the version author and licence'
   echo ''
-  echo "`basename $0` --usb isoname device"
-  echo "`basename $0` --persistent 32|64 device"
+  echo "`basename $0` --usb isofile device usbfstype 32|64 usblabel"
+  echo "`basename $0` --persistent 32|64 device persistent_size passphrase"
   echo ''
   echo '-> --usb option installs syslinux on a USB key using an ISO (specify path to image and device)'
-  echo '-> The script will ask user to confirm the device specified'
-  echo '-> It will also optionally create a persistent ext3 file.'
   echo ''
   echo '-> --persistent option creates a persistent ext3 file after installation, if user did not do so then'
   echo '-> specify architecture and device'
@@ -655,7 +653,7 @@ case $action in
 		umount $ISODIR
 		rmdir $ISODIR
 		losetup -d $LODEVISO || true
-		echo "`basename $0` --usb iso_name device"
+		echo "`basename $0` --usb isofile device usbfstype 32|64 usblabel"
 		exit $CMDERROR
 	fi
 		cd ~/
@@ -726,7 +724,7 @@ if [ "$SIZE" != "" ]; then
 			create_persistent
 			exit $!
 	else
-		echo "`basename $0` --persistent 32|64 device"
+		echo "`basename $0` --persistent 32|64 device persistent_size passphrase"
 		exit $CMDERROR
 	fi
 fi
@@ -740,7 +738,8 @@ usage
 exit 0
 ;;	
 	
-*)	echo "`basename $0` --usb isoname device"
+*)	echo "`basename $0` --persistent 32|64 device persistent_size passphrase"
+	echo "`basename $0` --usb isofile device usbfstype 32|64 usblabel"
 	exit $CMDERROR
 	;;
 esac
