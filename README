@@ -15,7 +15,6 @@ git clone https://github.com/djemos/instonusb.git
 cd instonusb
 sh maketxz.sh
 
-
 To install the package type:
 for 64bit:
 sudo spkg instonusb-2.0-x86_64-4dj.txz
