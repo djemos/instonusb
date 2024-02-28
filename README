@@ -6,12 +6,15 @@ To download and create the package type:
 mkdir build 
 cd build 
 git clone https://github.com/djemos/instonusb.git
-
 mv instonusb/SLKBUILD ./
-
 tar -cvjSf instonusb.tar.bz2 instonusb
-
 fakeroot slkbuild -X
+
+or
+git clone https://github.com/djemos/instonusb.git
+cd instonusb
+sh maketxz.sh
+
 
 To install the package type:
 for 64bit:
