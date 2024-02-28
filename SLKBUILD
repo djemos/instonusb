@@ -3,8 +3,8 @@
 pkgname=instonusb
 pkgver=2.0
 pkgrel=4dj
-source=("http://www.slackel.gr/repo/source/slackel-source/instonusb/2.0/$pkgname-$pkgver.tar.bz2")
-#source=("$pkgname-$pkgver.tar.bz2")
+#source=("http://www.slackel.gr/repo/source/slackel-source/instonusb/2.0/$pkgname-$pkgver.tar.bz2")
+source=("$pkgname.tar.bz2")
 url="http://slackel.gr"
 #options=('nosrcpack')
 
@@ -16,7 +16,7 @@ slackdesc=\
 )
 
 build() {
-	cd $SRC/$pkgname-$pkgver
+	cd $SRC/$pkgname
 	export LDFLAGS='-export-dynamic'
 	cmake -DCMAKE_INSTALL_PREFIX=/usr .
 		
